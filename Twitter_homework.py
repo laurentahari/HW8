@@ -59,11 +59,8 @@ def get_tweets():
     		#twitter_results = public_tweets[]['text']
     		# but also, save in the dictionary to cache it!
  #returns a list
-        CACHE_DICTION['umsi'] = twitter_results
 	# and then write the whole cache dictionary, now with new info added, to the file, so it'll be there even after your program closes!
-        cache_file = open(CACHE_FNAME,'w') # open the cache file for writing
-        cache_file.write(json.dumps(CACHE_DICTION)) # make the whole dictionary holding data and unique identifiers into a json-formatted string, and write that wholllle string to a file so you'll have it next time!
-        cache_file.close()
+    
     return twitter_results
 
 
