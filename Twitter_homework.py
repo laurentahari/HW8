@@ -60,9 +60,9 @@ def get_tweets():
     		# but also, save in the dictionary to cache it!
  #returns a list
 	# and then write the whole cache dictionary, now with new info added, to the file, so it'll be there even after your program closes!
-    
-    return twitter_results
 
+    #return twitter_results
+    print (type(twitter_results.text))
 
 ## [PART 2]
 # Create a database: tweets.sqlite,
@@ -74,7 +74,7 @@ def get_tweets():
 ## retweets - containing the number that represents how many times the tweet has been retweeted
 
 # Below we have provided interim outline suggestions for what to do, sequentially, in comments.
-
+"""
 # 1 - Make a connection to a new database tweets.sqlite, and create a variable to hold the database cursor.
 conn = sqlite3.connect('tweets.sqlite')
 cur = conn.cursor()
@@ -128,3 +128,4 @@ print ("more_than_2_rts - %s" % set(more_than_2_rts))
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+"""
